@@ -180,6 +180,8 @@ coverage/
 .idea/
 .tmp/
 ./dist/
+dist/
+dist
 orleans.codegen.cs
  .eslintrc.js
  .gitignore
