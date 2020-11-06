@@ -1,7 +1,24 @@
-<!--
- * @Descripttion: 
- * @Author: Maorui
- * @Date: 2020-11-05 15:24:32
- * @LastEditTime: 2020-11-06 10:26:16
--->
-# Maorui-site123
+# vue3demo
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
