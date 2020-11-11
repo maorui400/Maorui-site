@@ -2,20 +2,26 @@
  * @Descripttion: 首页
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-10-30 10:57:39
+ * @LastEditTime: 2020-11-11 10:48:17
 -->
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">生命周期演示</router-link> |
       <router-link to="/about">reactive toRefs演示</router-link> |
       <router-link to="/test">ref computed watch getCurrentInstance演示</router-link>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+body, html {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -2,17 +2,19 @@
  * @Descripttion: vue3 demo
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-11-04 09:34:24
+ * @LastEditTime: 2020-11-11 15:49:33
 -->
 <template>
-  <div class="home">
-    <HelloWorld msg="vue 3.0 demo"/>
+  <div class="page">
+    <headerNav></headerNav> 
+    <HelloWorld msg="Welcome to my Heart."/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
+import headerNav from '@/components/headerNav.vue';
 import { onErrorCaptured } from 'vue';
 
 export default {
@@ -23,7 +25,7 @@ export default {
     });
   },
   components: {
-    HelloWorld,
+    HelloWorld, headerNav
   },
 };
 </script>
