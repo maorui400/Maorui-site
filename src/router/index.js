@@ -2,11 +2,12 @@
  * @Descripttion: 路由
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-10-30 10:58:05
+ * @LastEditTime: 2020-11-11 16:40:49
  */
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Test from '../views/Test.vue';
+import About from '../views/About.vue';
 
 const routes = [
   {
@@ -20,7 +21,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: About,
   },
   {
     path: '/test',
@@ -30,6 +31,7 @@ const routes = [
 ];
 
 const router = createRouter({
+  // eslint-disable-next-line no-undef
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
