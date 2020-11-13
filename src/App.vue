@@ -2,7 +2,7 @@
  * @Descripttion: 首页
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-11-11 10:48:17
+ * @LastEditTime: 2020-11-11 17:00:15
 -->
 <template>
   <div id="app">
@@ -21,7 +21,20 @@ body, html {
   height: 100%;
   font-size: 16px;
 }
+::selection {
+    background:#ff9900; 
+    color:#fff;
+}
 
+::-moz-selection {
+    background:#ff9900; 
+    color:#fff;
+}
+
+::-webkit-selection {
+    background:#ff9900; 
+    color:#fff;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
