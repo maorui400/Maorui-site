@@ -2,7 +2,7 @@
  * @Descripttion: 首页
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-11-11 17:00:15
+ * @LastEditTime: 2020-11-13 15:43:35
 -->
 <template>
   <div id="app">
@@ -36,6 +36,8 @@ body, html {
     color:#fff;
 }
 #app {
+  width: 100%;
+  height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

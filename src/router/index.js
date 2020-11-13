@@ -2,7 +2,7 @@
  * @Descripttion: 路由
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-11-11 16:40:49
+ * @LastEditTime: 2020-11-13 16:22:03
  */
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
@@ -14,6 +14,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: { title:"玛丽莲铁蛋" }
   },
   {
     path: '/about',
@@ -35,5 +36,9 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
-
+const defaultTitle = '玛丽莲铁蛋';
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title ? to.meta.title : defaultTitle;
+  next();
+});
 export default router;
