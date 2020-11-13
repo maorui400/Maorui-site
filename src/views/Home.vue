@@ -2,7 +2,7 @@
  * @Descripttion: vue3 demo
  * @Author: Maorui
  * @Date: 2020-10-29 14:17:38
- * @LastEditTime: 2020-11-13 15:53:05
+ * @LastEditTime: 2020-11-13 16:48:10
 -->
 <template>
   <div class="page">
@@ -22,7 +22,8 @@
             4
           </van-swipe-item>
         </van-swipe>
-    </div> 
+    </div>
+    <footerNav></footerNav> 
   </div>
 </template>
 
@@ -30,6 +31,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue';
 import headerNav from '@/components/headerNav.vue';
+import footerNav from '@/components/footerNav.vue';
 import { addRef, toRefs, reactive, ref, onMounted } from 'vue';
 
 export default {
@@ -51,7 +53,7 @@ export default {
       }
   },
   components: {
-    headerNav,
+    headerNav, footerNav,
   },
 };
 </script>

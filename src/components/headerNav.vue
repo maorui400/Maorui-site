@@ -2,7 +2,7 @@
  * @Descripttion: 全局头部组件
  * @Author: Maorui
  * @Date: 2020-11-11 10:42:14
- * @LastEditTime: 2020-11-13 15:45:18
+ * @LastEditTime: 2020-11-13 16:50:24
 -->
 <template>
   <div class="header">
@@ -36,7 +36,7 @@ export default {
     'color: #ffffff; background: #000000; padding:5px 10px 5px 10px;font-size:40px;border-radius:12px 0 0 12px;', 'color: #000000; background: #FE9A00; padding:5px 10px;font-size:40px;border-radius:0 12px 12px 0;'
     )
     console.log('data', data);
-    return {data};
+    return { data };
   },
 };
 </script>
